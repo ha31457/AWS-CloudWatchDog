@@ -1,0 +1,57 @@
+{
+  "version": "0",
+  "id": "b2c3d4e5-6789-01bc-defg-222222222222",
+  "detail-type": "AWS API Call via CloudTrail",
+  "source": "aws.rds",
+  "account": "123456789012",
+  "time": "2024-01-15T11:00:00Z",
+  "region": "ap-south-1",
+  "resources": [],
+  "detail": {
+    "eventVersion": "1.08",
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDACKCEVSQ6C2EXAMPLE",
+      "arn": "arn:aws:iam::123456789012:user/dev-user",
+      "accountId": "123456789012",
+      "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+      "userName": "dev-user"
+    },
+    "eventTime": "2024-01-15T11:00:00Z",
+    "eventSource": "rds.amazonaws.com",
+    "eventName": "CreateDBInstance",
+    "awsRegion": "ap-south-1",
+    "sourceIPAddress": "203.0.113.25",
+    "userAgent": "console.rds.amazonaws.com",
+    "requestParameters": {
+      "dBInstanceIdentifier": "my-test-db",
+      "dBInstanceClass": "db.m5.large",
+      "engine": "mysql",
+      "masterUsername": "admin",
+      "allocatedStorage": 20,
+      "vpcSecurityGroupIds": ["sg-0123456789abcdef0"],
+      "availabilityZone": "ap-south-1a",
+      "dBSubnetGroupName": "default-vpc-subnet-group",
+      "backupRetentionPeriod": 7,
+      "multiAZ": false,
+      "engineVersion": "8.0.35",
+      "publiclyAccessible": false,
+      "storageType": "gp3"
+    },
+    "responseElements": {
+      "dBInstanceIdentifier": "my-test-db",
+      "dBInstanceClass": "db.m5.large",
+      "engine": "mysql",
+      "dBInstanceStatus": "creating",
+      "masterUsername": "admin",
+      "endpoint": {
+        "port": 3306
+      },
+      "allocatedStorage": 20,
+      "availabilityZone": "ap-south-1a",
+      "multiAZ": false,
+      "engineVersion": "8.0.35",
+      "dBInstanceArn": "arn:aws:rds:ap-south-1:123456789012:db:my-test-db"
+    }
+  }
+}
