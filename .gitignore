@@ -1,0 +1,29 @@
+# Secrets & credentials
+.env
+.env.*
+Credentials/
+*_accessKeys.csv
+*.pem
+
+# Account-specific generated policies
+cost-watchdog/bucket-policy.json
+cost-watchdog/idle-policy.json
+
+# Build artifacts
+cost-watchdog/function.zip
+cost-watchdog/func.zip
+cost-watchdog/lambda/vendor/
+cost-watchdog/build_zip.py
+cost-watchdog/output.json
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+kiro-aws/
+venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+test.txt
