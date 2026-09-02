@@ -1,0 +1,57 @@
+{
+  "version": "0",
+  "id": "c3d4e5f6-7890-12cd-efgh-333333333333",
+  "detail-type": "AWS API Call via CloudTrail",
+  "source": "aws.lambda",
+  "account": "123456789012",
+  "time": "2024-01-15T11:30:00Z",
+  "region": "ap-south-1",
+  "resources": [],
+  "detail": {
+    "eventVersion": "1.08",
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDACKCEVSQ6C2EXAMPLE",
+      "arn": "arn:aws:iam::123456789012:user/dev-user",
+      "accountId": "123456789012",
+      "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+      "userName": "dev-user"
+    },
+    "eventTime": "2024-01-15T11:30:00Z",
+    "eventSource": "lambda.amazonaws.com",
+    "eventName": "CreateFunction20150331",
+    "awsRegion": "ap-south-1",
+    "sourceIPAddress": "203.0.113.25",
+    "userAgent": "console.lambda.amazonaws.com",
+    "requestParameters": {
+      "functionName": "my-test-function",
+      "runtime": "python3.11",
+      "role": "arn:aws:iam::123456789012:role/lambda-execution-role",
+      "handler": "index.handler",
+      "memorySize": 256,
+      "timeout": 30,
+      "description": "A test Lambda function",
+      "environment": {
+        "variables": {}
+      },
+      "architectures": ["x86_64"]
+    },
+    "responseElements": {
+      "functionName": "my-test-function",
+      "functionArn": "arn:aws:lambda:ap-south-1:123456789012:function:my-test-function",
+      "runtime": "python3.11",
+      "role": "arn:aws:iam::123456789012:role/lambda-execution-role",
+      "handler": "index.handler",
+      "codeSize": 1024,
+      "description": "A test Lambda function",
+      "timeout": 30,
+      "memorySize": 256,
+      "lastModified": "2024-01-15T11:30:00.000+0000",
+      "version": "$LATEST",
+      "state": "Pending",
+      "stateReason": "The function is being created.",
+      "stateReasonCode": "Creating",
+      "architectures": ["x86_64"]
+    }
+  }
+}

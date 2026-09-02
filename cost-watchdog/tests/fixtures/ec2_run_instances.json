@@ -1,0 +1,86 @@
+{
+  "version": "0",
+  "id": "a1b2c3d4-5678-90ab-cdef-111111111111",
+  "detail-type": "AWS API Call via CloudTrail",
+  "source": "aws.ec2",
+  "account": "123456789012",
+  "time": "2024-01-15T10:30:00Z",
+  "region": "ap-south-1",
+  "resources": [],
+  "detail": {
+    "eventVersion": "1.08",
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDACKCEVSQ6C2EXAMPLE",
+      "arn": "arn:aws:iam::123456789012:user/dev-user",
+      "accountId": "123456789012",
+      "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+      "userName": "dev-user"
+    },
+    "eventTime": "2024-01-15T10:30:00Z",
+    "eventSource": "ec2.amazonaws.com",
+    "eventName": "RunInstances",
+    "awsRegion": "ap-south-1",
+    "sourceIPAddress": "203.0.113.25",
+    "userAgent": "console.ec2.amazonaws.com",
+    "requestParameters": {
+      "instancesSet": {
+        "items": [
+          {
+            "imageId": "ami-0abcdef1234567890",
+            "minCount": 2,
+            "maxCount": 2
+          }
+        ]
+      },
+      "instanceType": "t3.medium",
+      "blockDeviceMapping": {},
+      "monitoring": {
+        "enabled": false
+      },
+      "subnetId": "subnet-0bb1c79de1234abcd",
+      "disableApiTermination": false
+    },
+    "responseElements": {
+      "requestId": "59dbff89-35bd-4eac-99ed-be587EXAMPLE",
+      "reservationId": "r-1234567890abcdef0",
+      "ownerId": "123456789012",
+      "instancesSet": {
+        "items": [
+          {
+            "instanceId": "i-0abc123def456ghi7",
+            "imageId": "ami-0abcdef1234567890",
+            "instanceState": {
+              "code": 0,
+              "name": "pending"
+            },
+            "instanceType": "t3.medium",
+            "launchTime": 1705312200000,
+            "placement": {
+              "availabilityZone": "ap-south-1a",
+              "tenancy": "default"
+            },
+            "subnetId": "subnet-0bb1c79de1234abcd",
+            "vpcId": "vpc-0123456789abcdef0"
+          },
+          {
+            "instanceId": "i-0abc123def456ghi8",
+            "imageId": "ami-0abcdef1234567890",
+            "instanceState": {
+              "code": 0,
+              "name": "pending"
+            },
+            "instanceType": "t3.medium",
+            "launchTime": 1705312200000,
+            "placement": {
+              "availabilityZone": "ap-south-1a",
+              "tenancy": "default"
+            },
+            "subnetId": "subnet-0bb1c79de1234abcd",
+            "vpcId": "vpc-0123456789abcdef0"
+          }
+        ]
+      }
+    }
+  }
+}
